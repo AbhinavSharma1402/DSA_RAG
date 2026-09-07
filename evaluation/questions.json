@@ -1,0 +1,104 @@
+[
+  {
+    "q": "What is memoization?",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 300,
+    "tolerance_sec": 120,
+    "category": "direct_retrieval"
+  },
+  {
+    "q": "How is memoization different from tabulation?",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 720,
+    "tolerance_sec": 120,
+    "category": "semantic_retrieval"
+  },
+  {
+    "q": "bhai dp me memoization tabulation se different kaise",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 720,
+    "tolerance_sec": 120,
+    "category": "informal_query"
+  },
+  {
+    "q": "What was that thing sir said about storing previous answers?",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 300,
+    "tolerance_sec": 120,
+    "category": "query_rewriting"
+  },
+  {
+    "q": "Why is it faster than the naive approach?",
+    "expect_refusal": true,
+    "category": "ambiguous_follow_up",
+    "note": "Without conversation history, should refuse"
+  },
+  {
+    "q": "Explain BFS traversal",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 150,
+    "tolerance_sec": 120,
+    "category": "graph_algorithms"
+  },
+  {
+    "q": "How do you implement a stack?",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 600,
+    "tolerance_sec": 120,
+    "category": "data_structures"
+  },
+  {
+    "q": "React hooks kaise kaam karte hain?",
+    "expect_refusal": true,
+    "category": "out_of_scope",
+    "note": "Out of DSA scope"
+  },
+  {
+    "q": "What is the time complexity of quicksort?",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 900,
+    "tolerance_sec": 120,
+    "category": "time_complexity"
+  },
+  {
+    "q": "Who invented the telephone?",
+    "expect_refusal": true,
+    "category": "completely_irrelevant",
+    "note": "Not covered in DSA lectures"
+  },
+  {
+    "q": "What is dynamic programming?",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 100,
+    "tolerance_sec": 120,
+    "category": "foundational_concept"
+  },
+  {
+    "q": "linked list ke fayde kya hain?",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 450,
+    "tolerance_sec": 120,
+    "category": "hinglish_query"
+  },
+  {
+    "q": "Explain the concept of overlapping subproblems",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 400,
+    "tolerance_sec": 120,
+    "category": "conceptual"
+  },
+  {
+    "q": "tree traversal ke different methods kya hain?",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 800,
+    "tolerance_sec": 120,
+    "category": "tree_algorithms"
+  },
+  {
+    "q": "Hashing ke through collision handling ke liye kya strategies use hote hain?",
+    "expect_video_id": "YOUR_VIDEO_ID_HERE",
+    "expect_around_sec": 1100,
+    "tolerance_sec": 120,
+    "category": "hashing"
+  }
+]

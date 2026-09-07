@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube DSA Tutor - Lecture-Grounded Learning</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🎓 YouTube DSA Tutor</h1>
+            <p>Ask questions about DSA lectures and get answers grounded in actual lecture content</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Panel: Chat Interface -->
+            <div class="chat-panel">
+                <!-- Controls -->
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="topic-filter">Topic:</label>
+                        <select id="topic-filter">
+                            <option value="All">All Topics</option>
+                            <option value="Arrays">Arrays</option>
+                            <option value="Linked Lists">Linked Lists</option>
+                            <option value="Stacks">Stacks & Queues</option>
+                            <option value="Trees">Trees</option>
+                            <option value="Graphs">Graphs</option>
+                            <option value="Dynamic Programming">Dynamic Programming</option>
+                            <option value="Sorting">Sorting</option>
+                            <option value="Searching">Searching</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="mode-select">Mode:</label>
+                        <select id="mode-select">
+                            <option value="lecture">Lecture Mode</option>
+                            <option value="tutor">Tutor Mode</option>
+                        </select>
+                    </div>
+
+                    <button id="new-chat-btn" class="btn btn-secondary">New Chat</button>
+                </div>
+
+                <!-- Conversation History -->
+                <div class="conversation-history" id="conversation-history">
+                    <div class="welcome-message">
+                        <h2>Welcome! 👋</h2>
+                        <p>Ask a question about DSA lectures and get answers grounded in actual lecture content.</p>
+                        <p><strong>Examples:</strong></p>
+                        <ul>
+                            <li>"What is memoization?"</li>
+                            <li>"Difference between memoization and tabulation"</li>
+                            <li>"How does DFS work?"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Input Area -->
+                <div class="input-area">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="query-input" 
+                            placeholder="Ask your question here..."
+                            class="query-input"
+                        >
+                        <button id="ask-btn" class="btn btn-primary">Ask</button>
+                    </div>
+                    <div class="input-hint">Press Enter or click Ask to submit</div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Answer and YouTube Player -->
+            <div class="answer-panel">
+                <!-- Answer Section -->
+                <div class="answer-section">
+                    <div id="answer-container" class="answer-container">
+                        <div class="placeholder">
+                            <p>Answers will appear here with citations and timestamps</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="panel-divider"></div>
+
+                <!-- YouTube Player Section -->
+                <div class="player-section">
+                    <h3>📺 Lecture Player</h3>
+                    <div class="player-container">
+                        <iframe 
+                            id="youtube-player"
+                            width="100%" 
+                            height="315" 
+                            src="" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="player-timestamp" id="player-timestamp">
+                        Ready to play a lecture
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loading-indicator" class="loading-indicator hidden">
+        <div class="spinner"></div>
+        <p>Processing your question...</p>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="error-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeErrorModal()">&times;</span>
+            <h2>Error</h2>
+            <p id="error-message"></p>
+            <button class="btn btn-primary" onclick="closeErrorModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/app.js"></script>
+</body>
+</html>

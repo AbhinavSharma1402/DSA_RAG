@@ -588,6 +588,16 @@ curl http://localhost:6333/health
 3. Use smaller embedding model (`all-MiniLM-L6-v2`)
 4. Check Qdrant performance metrics
 
+## Proof of Project
+
+### Tutor interface
+
+![YouTube DSA Tutor interface](docs/Screenshot1.png)
+
+### Grounded answer with lecture sources and timestamped player
+
+![Grounded answer with lecture sources](docs/Screenshot2.png)
+
 ## 📚 Further Reading
 
 - [Qdrant Documentation](https://qdrant.tech/documentation/)
